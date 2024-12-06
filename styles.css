@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+ul {
+    border: 3px solid black;
+    background-color: white;
+    width: 63%;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+    list-style-type: none;  
+    padding: 0;
+    border-radius: 10px;
+}
+#background-image{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: blur(4px);
+}
+#background-image2{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: blur(4px);
+}
+a {
+    text-decoration: none;  
+    color: inherit;  
+    transition: 0.2s;
+}
+a:hover {
+    text-decoration: underline;  
+    color:blueviolet; 
+}
+li {
+    justify-content: space-between;
+    font-size: 30px;
+    margin: 10px; 
+    display: flex;
+}
+ 
+@media (max-width: 768px) {
+    ul {
+        width: 90%; 
+    }
+
+    li {
+        font-size: 24px;  
+    }
+}
+
+@media (max-width: 480px) {
+    ul {
+        width: 100%;  
+        justify-content: center;  
+    }
+
+    li {
+        font-size: 20px;  
+        margin: 5px; 
+    }
+}
+#container{
+    border-radius: 20px;
+    background-color:burlywood;
+    border: 3px solid black;
+    width: fit-content;
+    height:600px;
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 10px;  
+    justify-content: center;  
+    padding: 10px; 
+}
+
+#container img {
+    width: 100%;  
+    max-width: 300px;  
+    height: auto;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    transition: transform 0.3s; 
+}
+
+#container img:hover {
+    transform: scale(1.05);  
+}
+
+@media (max-width: 768px) {
+    #container img {
+        max-width: 200px; 
+    }
+}
+
+@media (max-width: 480px) {
+    #container img {
+        max-width: 100%;  
+    }
+}
+.container {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.content {
+    margin-top: -300px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+#title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#tkivili {
+    width: 80%;
+    height: 50px;
+    background: linear-gradient(45deg, #ffcc80, #ff7043);
+    margin: 20px auto;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#tkivili:hover {
+    width: 90%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#baxtrioni {
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid #ffd700;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #4CAF50, #1E88E5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+    transition: transform 0.4s ease;
+}
+
+#baxtrioni:hover {
+    transform: scale(1.05);
+    border-color: #ffab00;
+}
+
+#udidesitkivili {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#udidesitkivili:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 20px;
+    color: #ffd700;
+}
+
+p {
+    font-size: 30px;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: white;
+}
+
+.separator {
+    border: 2px solid white;
+    width: 80%;
+    margin: 20px auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ 
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    #baxtrioni {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #tkivili {
+        width: 100%;
+        height: 40px;
+    }
+
+    #baxtrioni {
+        padding: 10px;
+    }
+
+    #udidesitkivili {
+        max-width: 300px;
+    }
+}
+#yvelaferi{
+    margin-top: 20%;
+}

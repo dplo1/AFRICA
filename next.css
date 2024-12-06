@@ -1,0 +1,108 @@
+.container {
+    border-radius: 20px;
+    background-color: burlywood;
+    border: 3px solid black;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .image {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image {
+        max-width: 100%;
+    }
+}
+
+.block {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.info {
+    margin-top: -250px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+h1.title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    color: #ffd700;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: white;
+}
+
+.separator {
+    border: 2px solid white;
+    width: 80%;
+    margin: 20px auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    h1.title {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+}
